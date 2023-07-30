@@ -33,6 +33,7 @@ allow-direct-references = true
 "fmt" = { chain = [ "fmt:ruff", "fmt:black" ] }
 "fmt:ruff" = "ruff translation --fix"
 "fmt:black" = "black translation"
+"translation" = "python -m translation"
 
 [tool.black]
 target-version = ["py311"]
